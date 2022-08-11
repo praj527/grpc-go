@@ -93,9 +93,10 @@ var (
 )
 
 const (
-	//defaultClientMaxReceiveMessageSize = 1024 * 1024 * 4
-	defaultClientMaxReceiveMessageSize = math.MaxInt32
-	defaultClientMaxSendMessageSize    = math.MaxInt32
+	defaultClientMaxReceiveMessageSize = 1024 * 1024 * 4
+	//defaultClientMaxReceiveMessageSize = math.MaxInt32
+	//defaultClientMaxSendMessageSize    = math.MaxInt32
+	defaultClientMaxSendMessageSize    = 1024 * 1024 * 4
 	// http2IOBufSize specifies the buffer size for sending frames.
 	defaultWriteBufSize = 32 * 1024
 	defaultReadBufSize  = 32 * 1024
